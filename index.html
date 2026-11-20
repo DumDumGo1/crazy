@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WILD EVOLUTION – Das Tiermagazin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="logo" href="#">WILD<span>EVOLUTION</span></a>
+  <nav>
+    <a href="#start">Start</a>
+    <a href="#magazin">Magazin</a>
+    <a href="#evolution">Evolution</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+  <div class="edition">AUSGABE Nº 01 · 2026</div>
+</header>
+
+<main>
+  <section class="hero" id="start">
+    <div class="hero-image"></div>
+    <div class="hero-content">
+      <p class="eyebrow">DIE WELT DER TIERE NEU ENTDECKEN</p>
+      <h1>WILD<br><span>EVOLUTION.</span></h1>
+      <p class="hero-text">
+        Millionen Jahre Entwicklung. Unzählige Arten.
+        Eine unglaubliche Geschichte des Lebens.
+      </p>
+      <a href="#magazin" class="main-button">MAGAZIN ENTDECKEN ↓</a>
+    </div>
+    <div class="hero-number">01 / 06</div>
+  </section>
+
+  <section class="intro section" id="magazin">
+    <div>
+      <p class="eyebrow">WILLKOMMEN IN DER WILDNIS</p>
+      <h2>Die Natur ist<br><span>unglaublicher, als du denkst.</span></h2>
+    </div>
+    <p class="intro-text">
+      Warum haben Giraffen so lange Hälse? Wie können Oktopusse
+      ihre Farbe wechseln? Und wie wurden aus uralten Landtieren
+      die heutigen Wale? Dieses Magazin nimmt dich mit auf eine
+      Reise durch die faszinierende Welt der Evolution.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">DIE TITELGESCHICHTE</p>
+        <h2>Im Rampenlicht</h2>
+      </div>
+      <span class="issue">01 — 2026</span>
+    </div>
+
+    <article class="cover-story">
+      <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85" alt="Elefant in der Natur">
+      <div class="cover-info">
+        <p class="eyebrow">EVOLUTION · SÄUGETIERE</p>
+        <h3>Die unglaubliche Reise der Elefanten</h3>
+        <p>
+          Von kleinen, urzeitlichen Vorfahren bis zu den grössten
+          heute lebenden Landtieren: Die Entwicklung der Elefanten
+          ist eine Geschichte voller Veränderungen.
+        </p>
+        <button class="text-button" data-article="elefant">GESCHICHTE LESEN ↗</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="section explorer">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">DAS TIERREICH</p>
+        <h2>Entdecke die Arten</h2>
+      </div>
+      <p class="muted">Wähle ein Tier und lerne es kennen.</p>
+    </div>
+
+    <div class="search-area">
+      <input type="search" id="search" placeholder="🔎  Tier oder Begriff suchen ...">
+      <div class="filters">
+        <button class="filter active" data-filter="Alle">Alle</button>
+        <button class="filter" data-filter="Säugetiere">Säugetiere</button>
+        <button class="filter" data-filter="Vögel">Vögel</button>
+        <button class="filter" data-filter="Meeresbewohner">Meeresbewohner</button>
+        <button class="filter" data-filter="Urzeittiere">Urzeittiere</button>
+      </div>
+    </div>
+
+    <div class="animal-grid" id="animalGrid"></div>
+  </section>
+
+  <section class="evolution-section" id="evolution">
+    <div class="section dark-heading">
+      <p class="eyebrow">DIE GROSSE GESCHICHTE</p>
+      <h2>Evolution.<br><span>Ein Leben voller Veränderungen.</span></h2>
+      <p class="dark-intro">
+        Evolution beschreibt, wie sich vererbbare Merkmale von
+        Lebewesen über viele Generationen verändern. So entstand
+        die enorme Vielfalt des Lebens.
+      </p>
+
+      <div class="timeline">
+        <article class="time-card">
+          <span>VOR CA. 3,5 MILLIARDEN JAHREN</span>
+          <h3>Die ersten Lebensformen</h3>
+          <p>
+            Frühe Lebensspuren stammen aus einer Zeit, in der
+            einfache Mikroorganismen im Wasser lebten. Sie waren
+            noch keine Tiere.
+          </p>
+        </article>
+        <article class="time-card">
+          <span>VOR CA. 600 MILLIONEN JAHREN</span>
+          <h3>Erste Tiere</h3>
+          <p>
+            Im Meer entwickelten sich frühe Tiere. Viele hatten
+            einfache Körper und lebten auf dem Meeresboden.
+          </p>
+        </article>
+        <article class="time-card">
+          <span>VOR CA. 375 MILLIONEN JAHREN</span>
+          <h3>Der Weg an Land</h3>
+          <p>
+            Einige Wirbeltiere entwickelten Merkmale, die ihnen
+            das Leben in flachen Gewässern und später an Land
+            erleichterten.
+          </p>
+        </article>
+        <article class="time-card">
+          <span>VOR CA. 230 MILLIONEN JAHREN</span>
+          <h3>Die Zeit der Dinosaurier</h3>
+          <p>
+            Dinosaurier wurden zu einer bedeutenden Tiergruppe
+            an Land. Ihre Welt war voller verschiedener Arten.
+          </p>
+        </article>
+        <article class="time-card">
+          <span>VOR CA. 66 MILLIONEN JAHREN</span>
+          <h3>Ein grosses Massenaussterben</h3>
+          <p>
+            Ein Asteroideneinschlag trug zum Aussterben aller
+            Nicht-Vogel-Dinosaurier bei. Vögel sind die heute
+            lebenden Nachfahren einer Dinosauriergruppe.
+          </p>
+        </article>
+        <article class="time-card">
+          <span>HEUTE</span>
+          <h3>Die Vielfalt des Lebens</h3>
+          <p>
+            Auf der Erde leben Millionen verschiedener Arten.
+            Evolution findet weiterhin statt.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section facts-section">
+    <p class="eyebrow">WISSEN, DAS STAUNEN LÄSST</p>
+    <h2>Fakten-Alarm!</h2>
+    <p class="muted">Wie viel wusstest du davon noch nicht?</p>
+
+    <div class="fact-box">
+      <div class="fact-icon">✦</div>
+      <p id="factText">Klicke auf den Button und entdecke einen zufälligen Tierfakt.</p>
+      <button class="main-button" id="newFact">NEUER FAKT ↗</button>
+    </div>
+  </section>
+
+  <section class="quiz-section" id="quiz">
+    <div class="section">
+      <p class="eyebrow">WISSENSTEST</p>
+      <h2>Wie wild ist dein Wissen?</h2>
+      <p class="muted">Teste, was du über Tiere und Evolution gelernt hast.</p>
+
+      <div class="quiz-box">
+        <div class="quiz-top">
+          <span id="questionNumber">FRAGE 1 / 5</span>
+          <span id="score">PUNKTE: 0</span>
+        </div>
+        <h3 id="question">Bereit für das Quiz?</h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback"></p>
+        <button class="main-button" id="nextQuestion">QUIZ STARTEN →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <p class="eyebrow">DAS ABENTEUER GEHT WEITER</p>
+    <h2>Bleib neugierig.</h2>
+    <p>Die Natur hat noch unzählige Geheimnisse zu erzählen.</p>
+    <a href="#start" class="main-button">ZURÜCK NACH OBEN ↑</a>
+  </section>
+</main>
+
+<footer>
+  <span>WILD EVOLUTION © 2026</span>
+  <span>ENTDECKEN · VERSTEHEN · STAUNEN</span>
+</footer>
+
+<div class="modal" id="animalModal">
+  <div class="modal-content">
+    <button class="close-modal" id="closeModal">✕</button>
+    <img id="modalImage" src="" alt="">
+    <p class="eyebrow" id="modalCategory"></p>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <div class="modal-fact" id="modalFact"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
